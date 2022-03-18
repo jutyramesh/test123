@@ -13,9 +13,10 @@ steps:
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
-    subscriptionId: 'cloudwalker'
+    azureResourceManagerConnection: 'ARM'
+    subscriptionId: 'd8d6c0f2-a30f-4b4a-b614-3536d856187e'
     action: 'Create Or Update Resource Group'
-    resourceGroupName: 'cloudwalker'
-    location: 'centralus'
+    resourceGroupName: 'fsdet-walgreens'
+    location: 'Central US'
     templateLocation: 'Linked artifact'
     deploymentMode: 'Incremental'
